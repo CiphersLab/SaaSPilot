@@ -1,0 +1,84 @@
+{
+  "Home": {
+    "title": "SaaS Starter Kit By SaaS Pilot has a free version now!"
+  },
+  "Languages": {
+    "title": "Languages",
+    "english": "English",
+    "german": "German",
+    "arabic":"Arabic"
+  },
+  "Auth": {
+    "title": "Auth"
+  },
+  "Login": {
+    "welcomeText": "Welcome back",
+    "forgotPassword": "Forgot Password",
+    "noAccount": "Don't have an account?",
+    "twoFactorCode": "Two Factor Code",
+    "form": {
+      "email": "Email",
+      "emailPlaceholder": "den.don@example.com",
+      "twoFactorCodePlaceholder": "123456",
+      "password": "Password"
+    },
+    "buttons": {
+      "confirm": "Confirm",
+      "login": "Login"
+    }
+  },
+  "RegisterPage": {
+    "createAccount": "Create an account",
+    "alreadyAnAccount": "Already have an account?",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Den Don",
+      "email": "Email",
+      "emailPlaceholder": "den.don@example.com",
+      "password": "Password",
+      "username": "Username"
+    }
+  },
+  "LoginFailedPage": {
+    "somethingWrong": "Ooops! Something went wrong!",
+    "backToLogin": "Back to login"
+  },
+  "NewPasswordPage": {
+    "enterNewPassword": "Enter a new password",
+    "backToLogin": "Back to login",
+    "form": {
+      "password": "Password"
+    },
+    "buttons": {
+      "resetPassword": "Reset Password"
+    }
+  },
+  "NewVerificationPage": {
+    "confirmVerification": "Confirming your verification",
+    "backToLogin":"Back to login",
+    "missingToken": "Missing token!",
+    "somethingWrong": "Ooops! Something went wrong!"
+  },
+  "ResetPasswordPage": {
+    "forgetYourPassword": "Forget Your Password",
+    "backToLogin": "Back to login",
+    "form": {
+      "email": "Email",
+      "emailPlaceholder": "den.don@example.com"
+    },
+    "buttons": {
+      "sendEmail": "Send reset email"
+    }
+  },
+  "Navbar": {
+    "title": "SaaS Pilot",
+    "buttons": {
+      "pricing": "Pricing",
+      "signIn": "Sign In",
+      "getStarted": "Get Started",
+      "blogs": "Blogs",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    }
+  }
+}

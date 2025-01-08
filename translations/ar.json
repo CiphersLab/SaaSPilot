@@ -1,0 +1,84 @@
+{
+  "Home": {
+    "title": "SaaS Starter بواسطة Ciphers Lab متاح الآن للجميع!"
+  },
+  "Languages": {
+    "title": "اللغات",
+    "english": "الإنجليزية",
+    "german": "الألمانية",
+    "arabic":"العربية"
+  },
+  "Auth": {
+    "title": "المصادقة"
+  },
+  "Login": {
+    "welcomeText": "مرحباً بعودتك",
+    "forgotPassword": "نسيت كلمة المرور",
+    "noAccount": "ليس لديك حساب؟",
+    "twoFactorCode": "رمز التحقق الثنائي",
+    "form": {
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "den.don@example.com",
+      "twoFactorCodePlaceholder": "123456",
+      "password": "كلمة المرور"
+    },
+    "buttons": {
+      "confirm": "تأكيد",
+      "login": "تسجيل الدخول"
+    }
+  },
+  "RegisterPage": {
+    "createAccount": "إنشاء حساب",
+    "alreadyAnAccount": "لديك حساب بالفعل؟",
+    "form": {
+      "name": "الاسم",
+      "namePlaceholder": "جون دو",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "den.don@example.com",
+      "password": "كلمة المرور",
+      "username": "اسم المستخدم"
+    }
+  },
+  "LoginFailedPage": {
+    "somethingWrong": "عذرًا! حدث خطأ ما!",
+    "backToLogin": "العودة إلى تسجيل الدخول"
+  },
+  "NewPasswordPage": {
+    "enterNewPassword": "أدخل كلمة مرور جديدة",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "form": {
+      "password": "كلمة المرور"
+    },
+    "buttons": {
+      "resetPassword": "إعادة تعيين كلمة المرور"
+    }
+  },
+  "NewVerificationPage": {
+    "confirmVerification": "تأكيد التحقق الخاص بك",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "missingToken": "الرمز مفقود!",
+    "somethingWrong": "عذرًا! حدث خطأ ما!"
+  },
+  "ResetPasswordPage": {
+    "forgetYourPassword": "هل نسيت كلمة المرور؟",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "form": {
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "den.don@example.com"
+    },
+    "buttons": {
+      "sendEmail": "إرسال بريد إعادة التعيين"
+    }
+  },
+  "Navbar": {
+    "title": "SaaS Starter بواسطة Ciphers Lab.",
+    "buttons": {
+      "pricing": "الأسعار",
+      "signIn": "تسجيل الدخول",
+      "getStarted": "ابدأ الآن",
+      "blogs": "المدونات",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    }
+  }
+}

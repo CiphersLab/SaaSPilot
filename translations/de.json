@@ -1,0 +1,84 @@
+{
+  "Home": {
+    "title": "SaaS Starter von Ciphers Lab ist jetzt öffentlich!"
+  },
+  "Languages": {
+    "title": "Sprachen",
+    "english": "Englisch",
+    "german": "Deutsch",
+    "arabic": "Arabic"
+  },
+  "Auth": {
+    "title": "Authentifizierung"
+  },
+  "Login": {
+    "welcomeText": "Willkommen zurück",
+    "forgotPassword": "Passwort vergessen",
+    "noAccount": "Kein Konto?",
+    "twoFactorCode": "Zwei-Faktor-Code",
+    "form": {
+      "email": "E-Mail",
+      "emailPlaceholder": "den.don@example.com",
+      "twoFactorCodePlaceholder": "123456",
+      "password": "Passwort"
+    },
+    "buttons": {
+      "confirm": "Bestätigen",
+      "login": "Anmelden"
+    }
+  },
+  "RegisterPage": {
+    "createAccount": "Konto erstellen",
+    "alreadyAnAccount": "Hast du bereits ein Konto?",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Den Don",
+      "email": "E-Mail",
+      "emailPlaceholder": "den.don@example.com",
+      "password": "Passwort",
+      "username": "Username"
+    }
+  },
+  "LoginFailedPage": {
+    "somethingWrong": "Ooops! Etwas ist schiefgelaufen!",
+    "backToLogin": "Zurück zur Anmeldung"
+  },
+  "NewPasswordPage": {
+    "enterNewPassword": "Neues Passwort eingeben",
+    "backToLogin": "Zurück zur Anmeldung",
+    "form": {
+      "password": "Passwort"
+    },
+    "buttons": {
+      "resetPassword": "Passwort zurücksetzen"
+    }
+  },
+  "NewVerificationPage": {
+    "confirmVerification": "Bestätigung wird überprüft",
+    "backToLogin": "Zurück zur Anmeldung",
+    "missingToken": "Token fehlt!",
+    "somethingWrong": "Ooops! Etwas ist schiefgelaufen!"
+  },
+  "ResetPasswordPage": {
+    "forgetYourPassword": "Passwort vergessen",
+    "backToLogin": "Zurück zur Anmeldung",
+    "form": {
+      "email": "E-Mail",
+      "emailPlaceholder": "den.don@example.com"
+    },
+    "buttons": {
+      "sendEmail": "E-Mail zum Zurücksetzen senden"
+    }
+  },
+  "Navbar": {
+    "title": "SaaS-Starter von Ciphers Lab.",
+    "buttons": {
+      "pricing": "Preise",
+      "signIn": "Anmelden",
+      "getStarted": "Legen Sie los",
+      "blogs": "Blogs",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    }
+  }
+}

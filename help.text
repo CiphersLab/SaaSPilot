@@ -1,0 +1,41 @@
+///////Server Side User /////////////////
+
+import { currentUser } from "@/lib/auth";
+const user = await currentUser() as User | undefined;
+
+
+///////Client Side User /////////////////
+
+import { useCurrentUser } from "@/hooks/use-current-user";
+const user = useCurrentUser();  
+
+-------
+
+import { useSession } from "next-auth/react";
+const session = useSession();
+session.data?.user.role;
+
+const { data: session } = useSession();
+
+
+
+--------
+
+
+///////// Manage Credits for Usage
+import { CreditsProvider, useCredits } from '@/context/CreditsContext';
+
+
+const { credits, addCredits, spendCredits } = useCredits();
+
+const handleAddCredits = async () => {
+await addCredits('user-id', 50); // Replace 'user-id' with actual ID
+};
+
+const handleSpendCredits = async () => {
+await spendCredits('user-id', 10); // Replace 'user-id' with actual ID
+};
+
+
+///////// Test Card
+4242424242424242

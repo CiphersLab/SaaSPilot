@@ -7,29 +7,29 @@ import { Testimonial } from "@/types/testimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy asd",
-    designation: "Founder @TailGrids",
+    name: "Alex Turner",
+    designation: "Founder @LaunchGrid",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/testimonials/auth-01.png",
+      "SaaS Pilot is a game-changer! Easy to use, powerful features, and perfect for startups.",
+    image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Samantha Lee",
+    designation: "Founder @QuickStream",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/testimonials/auth-02.png",
+      "Great for entrepreneurs! The free version got me started, and the premium upgrade is worth it!",
+    image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "John Mitchell",
+    designation: "Founder @InnovaTech",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/testimonials/auth-03.png",
+      "Fantastic value! User-friendly and feature-packed—SaaS Pilot made scaling our SaaS product a breeze.",
+    image: "/images/testimonials/auth-03.png",
     star: 5,
   },
 ];

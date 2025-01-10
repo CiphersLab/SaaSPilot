@@ -142,7 +142,7 @@ const Pricing: React.FC = () => {
                 <div
                   key={plan}
                   className={cn(
-                    'relative rounded-2xl bg-white shadow-lg border border-gray-200',                    
+                    'relative rounded-2xl bg-background shadow-lg max-h-[470px] min-h-[450px] min-w-[200px] border border-gray-200',                    
                   )}>
                   {/* {plan === 'Pro' && (
                     <div className='absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-2 text-sm font-medium text-white'>
@@ -165,7 +165,7 @@ const Pricing: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className='flex h-20 items-center justify-center border-b border-t border-gray-200 bg-gray-50'>
+                  <div className='flex h-20 items-center justify-center border-b border-t border-gray-200 bg-heading-background'>
                     <div className='flex items-center space-x-1'>
                       <p>
                         {quota.toLocaleString()} Credits/mo

@@ -22,8 +22,10 @@ import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/form-error";
 import { FormSucess } from "@/components/form-sucess";
 import { register } from "@/actions/register";
+import { useTranslations } from "next-intl";
 
 const RegisterForm = () => {
+  const t = useTranslations("RegisterPage");
   const [error, setError] = useState<string | undefined>("");
   const [sucess, setSucess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
@@ -34,6 +36,7 @@ const RegisterForm = () => {
       email: "",
       password: "",
       name: "",
+      username: "",
     },
   });
 
@@ -51,8 +54,8 @@ const RegisterForm = () => {
 
   return (
     <CardWrapper
-      headerLabel="Create an account"
-      backButtonLabel="Already have an account?"
+      headerLabel={t("createAccount")}
+      backButtonLabel={t("alreadyAnAccount")}
       backButtonHref="/auth/login"
       showSocial
     >
@@ -65,12 +68,30 @@ const RegisterForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>{t("form.name")}</FormLabel>
                   <FormControl>
                     <Input
                       {...field}
                       disabled={isPending}
-                      placeholder="Den Don"
+                      placeholder={t("form.namePlaceholder")}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="username"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("form.username")}</FormLabel>
+                  <FormControl>
+                    <Input
+                      {...field}
+                      disabled={isPending}
+                      placeholder={t("form.username")}
                     />
                   </FormControl>
                   <FormMessage />
@@ -84,12 +105,12 @@ const RegisterForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{t("form.email")}</FormLabel>
                   <FormControl>
                     <Input
                       {...field}
                       disabled={isPending}
-                      placeholder="den.don@example.com"
+                      placeholder={t("form.email")}
                       type="email"
                     />
                   </FormControl>
@@ -104,7 +125,7 @@ const RegisterForm = () => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>{t("form.password")}</FormLabel>
                   <FormControl>
                     <Input
                       {...field}
@@ -121,7 +142,7 @@ const RegisterForm = () => {
           <FormError message={error} />
           <FormSucess message={sucess} />
           <Button disabled={isPending} type="submit" className="w-full">
-            Create an account
+            {t("createAccount")}
           </Button>
         </form>
       </Form>

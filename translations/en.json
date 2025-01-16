@@ -1,6 +1,6 @@
 {
   "Home": {
-    "title": "SaaS Starter Kit By SaaS Pilot has a free version now!"
+    "title": "SaaS Starter Kit By SaaS Pilot is now public!"
   },
   "Languages": {
     "title": "Languages",
@@ -9,7 +9,7 @@
     "arabic":"Arabic"
   },
   "Auth": {
-    "title": "Auth"
+    "title": "SaaS Pilot"
   },
   "Login": {
     "welcomeText": "Welcome back",
@@ -18,7 +18,7 @@
     "twoFactorCode": "Two Factor Code",
     "form": {
       "email": "Email",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "twoFactorCodePlaceholder": "123456",
       "password": "Password"
     },
@@ -32,9 +32,9 @@
     "alreadyAnAccount": "Already have an account?",
     "form": {
       "name": "Name",
-      "namePlaceholder": "Den Don",
+      "namePlaceholder": "Test Hero",
       "email": "Email",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "password": "Password",
       "username": "Username"
     }
@@ -64,7 +64,7 @@
     "backToLogin": "Back to login",
     "form": {
       "email": "Email",
-      "emailPlaceholder": "den.don@example.com"
+      "emailPlaceholder": "test.hero@example.com"
     },
     "buttons": {
       "sendEmail": "Send reset email"

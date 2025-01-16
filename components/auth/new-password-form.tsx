@@ -23,8 +23,10 @@ import { FormError } from "@/components/form-error";
 import { FormSucess } from "@/components/form-sucess";
 
 import { newPassword } from "@/actions/new-password";
+import { useTranslations } from "next-intl";
 
 const NewPasswordForm = () => {
+  const t = useTranslations("NewPasswordPage");
   const [error, setError] = useState<string | undefined>("");
   const [success, setSuccess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
@@ -54,8 +56,8 @@ const NewPasswordForm = () => {
 
   return (
     <CardWrapper
-      headerLabel="Enter a new password"
-      backButtonLabel="Back to login"
+      headerLabel={t('enterNewPassword')}
+      backButtonLabel={t('backToLogin')}
       backButtonHref="/auth/login"
     >
       <Form {...form}>
@@ -67,7 +69,7 @@ const NewPasswordForm = () => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>{t('form.password')}</FormLabel>
                   <FormControl>
                     <Input
                       {...field}
@@ -84,7 +86,7 @@ const NewPasswordForm = () => {
           <FormError message={error} />
           <FormSucess message={success} />
           <Button disabled={isPending} type="submit" className="w-full">
-            Reset password
+            {t('buttons.resetPassword')}
           </Button>
         </form>
       </Form>

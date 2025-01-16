@@ -447,7 +447,7 @@ const Page = async () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-dark mb-1 text-lg font-semibold dark:text-white">
-                    Adveen Desuza
+                    Team Member 1
                   </h3>
                   <p className="text-muted-foreground dark:text-dark-6 mb-5 text-sm">
                     UI Designer
@@ -750,7 +750,7 @@ const Page = async () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-dark mb-1 text-lg font-semibold dark:text-white">
-                    Jezmin uniya
+                    Team Member 2
                   </h3>
                   <p className="text-muted-foreground dark:text-dark-6 mb-5 text-sm">
                     Product Designer
@@ -1053,7 +1053,7 @@ const Page = async () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-dark mb-1 text-lg font-semibold dark:text-white">
-                    Andrieo Gloree
+                    Team Member 3
                   </h3>
                   <p className="text-muted-foreground dark:text-dark-6 mb-5 text-sm">
                     App Developer
@@ -1356,7 +1356,7 @@ const Page = async () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-dark mb-1 text-lg font-semibold dark:text-white">
-                    Jackie Sanders
+                    Team Member 4
                   </h3>
                   <p className="text-muted-foreground dark:text-dark-6 mb-5 text-sm">
                     Content Writer

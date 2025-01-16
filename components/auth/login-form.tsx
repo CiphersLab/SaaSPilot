@@ -24,8 +24,10 @@ import { FormError } from "@/components/form-error";
 import { FormSucess } from "@/components/form-sucess";
 
 import { login } from "@/actions/login";
+import { useTranslations } from "next-intl";
 
 const LoginForm = () => {
+  const t = useTranslations("Login");
   const [showTwoFactor, setShowTwoFactor] = useState(false);
   const [error, setError] = useState<string | undefined>("");
   const [success, setSuccess] = useState<string | undefined>("");
@@ -73,8 +75,8 @@ const LoginForm = () => {
 
   return (
     <CardWrapper
-      headerLabel="Welcome back"
-      backButtonLabel="Don't have an account?"
+      headerLabel={t('welcomeText')}
+      backButtonLabel={t('noAccount')}
       backButtonHref="/auth/register"
       showSocial
     >
@@ -89,12 +91,12 @@ const LoginForm = () => {
                   name="code"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Two Factor Code</FormLabel>
+                      <FormLabel>{t('twoFactorCode')}</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           disabled={isPending}
-                          placeholder="123456"
+                          placeholder={t('form.twoFactorCodePlaceholder')}
                         />
                       </FormControl>
                       <FormMessage />
@@ -111,12 +113,12 @@ const LoginForm = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel>{t('form.email')}</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           disabled={isPending}
-                          placeholder="den.don@example.com"
+                          placeholder={t('form.emailPlaceholder')}
                           type="email"
                         />
                       </FormControl>
@@ -131,7 +133,7 @@ const LoginForm = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Password</FormLabel>
+                      <FormLabel>{t('form.password')}</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
@@ -146,7 +148,7 @@ const LoginForm = () => {
                         asChild
                         className="px-0 font-normal"
                       >
-                        <Link href="/auth/reset">Forgot password?</Link>
+                        <Link href="/auth/reset">{t('forgotPassword')}</Link>
                       </Button>
                       <FormMessage />
                     </FormItem>
@@ -158,7 +160,7 @@ const LoginForm = () => {
           <FormError message={error || urlError} />
           <FormSucess message={success} />
           <Button disabled={isPending} type="submit" className="w-full">
-            {showTwoFactor ? "Confirm" : "Login"}
+            {showTwoFactor ? t('buttons.confirm') : t('buttons.login')}
           </Button>
         </form>
       </Form>

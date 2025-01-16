@@ -1,4 +1,4 @@
-import { FR, US } from "country-flag-icons/react/3x2"
+import { AE, DE, FR, US } from "country-flag-icons/react/3x2"
 
 export function renderFlag(locale: string) {
   let Flag
@@ -24,16 +24,21 @@ export function renderFlag(locale: string) {
     //   country = "Italian"
     //   // country = COUNTRIES.IT
     //   break
-    // case "de":
-    //   Flag = DE
-    //   country = "German"
-    //   // country = COUNTRIES.DE
-    //   break
+    case "de":
+      Flag = DE
+      country = "German"
+      // country = COUNTRIES.DE
+      break
     // case "pt":
     //   Flag = PT
     //   country = "Portuguese"
     //   // country = COUNTRIES.PT
     //   break
+    case "ar":
+      Flag = AE
+      country = "Arabic"
+      // country = COUNTRIES.DE
+      break
     default:
       Flag = US
       country = "English"

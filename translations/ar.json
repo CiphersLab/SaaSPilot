@@ -9,7 +9,7 @@
     "arabic":"العربية"
   },
   "Auth": {
-    "title": "المصادقة"
+    "title": "SaaS Pilot"
   },
   "Login": {
     "welcomeText": "مرحباً بعودتك",
@@ -18,7 +18,7 @@
     "twoFactorCode": "رمز التحقق الثنائي",
     "form": {
       "email": "البريد الإلكتروني",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "twoFactorCodePlaceholder": "123456",
       "password": "كلمة المرور"
     },
@@ -34,7 +34,7 @@
       "name": "الاسم",
       "namePlaceholder": "جون دو",
       "email": "البريد الإلكتروني",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "password": "كلمة المرور",
       "username": "اسم المستخدم"
     }
@@ -64,7 +64,7 @@
     "backToLogin": "العودة إلى تسجيل الدخول",
     "form": {
       "email": "البريد الإلكتروني",
-      "emailPlaceholder": "den.don@example.com"
+      "emailPlaceholder": "test.hero@example.com"
     },
     "buttons": {
       "sendEmail": "إرسال بريد إعادة التعيين"

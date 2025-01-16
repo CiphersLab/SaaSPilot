@@ -45,6 +45,7 @@ export const createStripeSession :any = async (userId: string | undefined, planI
         ],
         metadata: {
           userId: userId,
+          priceId: planId,
         },
       })
 

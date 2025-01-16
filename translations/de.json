@@ -9,7 +9,7 @@
     "arabic": "Arabic"
   },
   "Auth": {
-    "title": "Authentifizierung"
+    "title": "SaaS Pilot"
   },
   "Login": {
     "welcomeText": "Willkommen zurück",
@@ -18,7 +18,7 @@
     "twoFactorCode": "Zwei-Faktor-Code",
     "form": {
       "email": "E-Mail",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "twoFactorCodePlaceholder": "123456",
       "password": "Passwort"
     },
@@ -32,9 +32,9 @@
     "alreadyAnAccount": "Hast du bereits ein Konto?",
     "form": {
       "name": "Name",
-      "namePlaceholder": "Den Don",
+      "namePlaceholder": "Test Hero",
       "email": "E-Mail",
-      "emailPlaceholder": "den.don@example.com",
+      "emailPlaceholder": "test.hero@example.com",
       "password": "Passwort",
       "username": "Username"
     }
@@ -64,7 +64,7 @@
     "backToLogin": "Zurück zur Anmeldung",
     "form": {
       "email": "E-Mail",
-      "emailPlaceholder": "den.don@example.com"
+      "emailPlaceholder": "test.hero@example.com"
     },
     "buttons": {
       "sendEmail": "E-Mail zum Zurücksetzen senden"

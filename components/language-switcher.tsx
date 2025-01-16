@@ -1,7 +1,7 @@
-// "use client"
+"use client"
 
-import { Fragment } from "react"
-
+import { Fragment, startTransition } from "react"
+import { setUserLocale } from "@/services/locale";
 import { buttonVariants } from "./ui/button"
 import {
   DropdownMenu,
@@ -20,6 +20,12 @@ import Link from "next/link"
 
 export function LanguageSwitcher() {
   const locale = useLocale()
+
+  const setOption = (langKey: any) => {    
+    startTransition(() => {
+      setUserLocale(langKey);
+    });
+  }
 
   const filteredLocales = locales?.filter(
     (currentLocale) => currentLocale !== locale
@@ -42,10 +48,12 @@ export function LanguageSwitcher() {
         {filteredLocales?.map((currentLocale, index) => (
           <Fragment key={index}>
             <Link
-              href="/"
-              // TODO error on sub layout language switch (example from dashboard)
-              // href={pathname?.replace(`/${locale}`, "") ?? "/"}
+              href="/"              
               locale={currentLocale}
+              onClick={(e) => {
+                e.preventDefault();
+                setOption(currentLocale);
+              }}
             >
               <DropdownMenuItem className="flex cursor-pointer items-start justify-center">
                 {renderFlag(currentLocale)}

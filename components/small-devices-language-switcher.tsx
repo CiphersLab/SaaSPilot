@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, startTransition } from "react";
 
 import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
@@ -15,9 +15,15 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+import { setUserLocale } from "@/services/locale";
 
 export function SmallDevicesLanguageSwitcher() {
   const locale = useLocale();
+  const setOption = (langKey: any) => {    
+    startTransition(() => {
+      setUserLocale(langKey);
+    });
+  }
 
   const filteredLocales = locales?.filter(
     (currentLocale) => currentLocale !== locale
@@ -34,8 +40,10 @@ export function SmallDevicesLanguageSwitcher() {
             <Fragment key={index}>
               <Link
                 href="/"
-                // TODO error on sub layout language switch (example from dashboard)
-                // href={pathname?.replace(`/${locale}`, "") ?? "/"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOption(currentLocale);
+                }}
                 locale={currentLocale}
               >
                 <DropdownMenuItem className="flex cursor-pointer items-start justify-center">

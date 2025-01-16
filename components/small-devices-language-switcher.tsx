@@ -1,3 +1,4 @@
+"use client";
 import { Fragment, startTransition } from "react";
 
 import { buttonVariants } from "./ui/button";

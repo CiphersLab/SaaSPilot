@@ -1,6 +1,33 @@
 {
   "Home": {
-    "title": "SaaS Starter Kit By SaaS Pilot is now public!"
+    "title": "SaaS Starter Kit By SaaS Pilot is now public!",
+    "headingPart1":"The",
+    "headingPart2":"Shortcut",
+    "headingPart3":"to",
+    "headingPart4":"Success",
+    "peragraph":"SaaS Pilot gives you a head start with a complete, modern SaaS starter kit. Focus on innovation while we handle the heavy lifting, from authentication to payments and multi-language support.",
+    "getStarted":"Get started",
+    "feature":{
+      "headingPart1":"Turn Ideas into Income in",
+      "headingPart2":"Days",
+      "peragraph":"With SaaS Pilot, you're just a few steps away from launching your SaaS product. Packed with pre-built features like authentication, payments, and admin tools, it's everything you need to hit the ground running."
+    },
+    "step1":{
+      "step":"Step 1",
+      "heading":"Find Your SaaS Idea",
+      "peragraph":"Identify a profitable niche or solution that resonates with your audience."
+    },
+    "step2":{
+      "step":"Step 2",
+      "heading":"Build with SaaS Pilot",
+      "peragraph":"Use SaaS Pilot to quickly create a feature-rich, scalable product. ",
+      "proPlan":" pro plan"
+    },
+    "step3":{
+      "step":"Step 3",
+      "heading":"Launch and Earn",
+      "peragraph":"Go live, attract customers, and start generating revenue fast."
+    }
   },
   "Languages": {
     "title": "Languages",
@@ -80,5 +107,48 @@
       "aboutUs": "About Us",
       "contactUs": "Contact Us"
     }
+  },
+  "AboutSectionOne":{
+    "SectionTitlePart1":"Built with Modern",
+    "SectionTitlePart2":"Cutting-edge ",
+    "SectionTitlePart3":"Technologies",
+    "sectionPeragraph":"Incorporates cutting-edge technologies, ensuring your software service is built on the latest, most advanced frameworks and tools. This provides a robust, scalable foundation for your SaaS product, offering you a competitive edge in a fast-paced digital market."
+  },
+  "Testimonials":{
+    "SectionTitlePart1":"Admired by ",
+    "SectionTitlePart2":"SaaS Founders, Makers,",
+    "SectionTitlePart3":"and",
+    "SectionTitlePart4":"Developers",
+    "sectionPeragraph":"Exceptional Features, Seamless Developer Experience, Tons of Integrations and Highly Optimized!"
+  },
+  "Technologies":{
+    "peragraph":"This project was built using the following technologies"
+  },
+  "FAQ":{
+    "sectionTitlePart1":"Frequently ",
+    "sectionTitlePart2":"Asked",
+    "sectionTitlePart3":"Questions",
+    "question1":"How does it work?",
+    "question2":"What is your pricing?",
+    "answer1":"Service description content",
+    "answer2":"Pricing description content"
+  },
+  "SiteFooter": {
+    "itemPrice": "Pricing",
+    "itemDocs": "Docs",
+    "itemDiscord": "Discord",
+    "itemTwitter": "Twitter",
+    "itemEmail": "Email",
+    "itemTerms": "Terms",
+    "itemPrivacy": "Privacy",
+    "itemLabel1":"Product",
+    "itemLabel2":"Developers",
+    "itemLabel3":"Community",
+    "itemLabel4":"Legal",
+    "itemIconDiscord":"Discord",
+    "itemIconTwitter":"Twitter",
+    "itemIconLinkedIn":"LinkedIn",
+    "copyRight":". All Rights Reserved.",
+    "siteDescription":"Why waste months on setup? SaaS Pilot offers a ready-to-use Next.js boilerplate."
   }
 }

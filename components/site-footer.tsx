@@ -1,26 +1,28 @@
-import { Icons } from "./icons"
+
+import { Icons } from "@/components/icons"
 import { siteConfig } from "@/config/site"
 import { DiscordLogoIcon } from "@radix-ui/react-icons"
+import { useTranslations } from "next-intl"
 
 import Image from "next/image"
 import Link from "next/link"
 
 const footerNavs = [
   {
-    label: "Product",
+    label: "itemLabel1",
     items: [
       {
         href: "/pricing",
-        name: "Pricing",
+        name: "itemPrice",
       },
     ],
   },
   {
-    label: "Developers",
+    label: "itemLabel2",
     items: [
       {
         href: "#",
-        name: "Docs",
+        name: "itemDocs",
       },
       // {
       //   href: `${siteConfig.links.github}/issues`,
@@ -33,33 +35,33 @@ const footerNavs = [
     ],
   },
   {
-    label: "Community",
+    label: "itemLabel3",
     items: [
       {
         href: siteConfig.links.discord,
-        name: "Discord",
+        name: "itemDiscord",
       },
       {
         href: siteConfig.links.twitter,
-        name: "Twitter",
+        name: "itemTwitter",
       },
       {
         href: `mailto:${siteConfig.email}`,
-        name: "Email",
+        name: "itemEmail",
       },
     ],
   },
   {
-    label: "Legal",
+    label: "itemLabel4",
     items: [
       {
         href: "/terms",//terms
-        name: "Terms",
+        name: "itemTerms",
       },
 
       {
         href: "/privacy",//privacy
-        name: "Privacy",
+        name: "itemPrivacy",
       },
     ],
   },
@@ -84,6 +86,7 @@ const footerSocials = [
 ]
 
 export function SiteFooter() {
+  const t = useTranslations("SiteFooter");
   const currentYear = new Date().getFullYear()
 
   return (
@@ -99,13 +102,13 @@ export function SiteFooter() {
                 {siteConfig.name}
               </span>
             </Link>
-            <p className="max-w-xs">{siteConfig.description}</p>
+            <p className="max-w-xs">{t("siteDescription")}</p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-4">
             {footerNavs.map((nav) => (
               <div key={nav.label}>
                 <h2 className="mb-6 text-sm font-semibold text-foreground uppercase dark:text-white">
-                  {nav.label}
+                {t(nav.label)}
                 </h2>
                 <ul className="gap-2 grid">
                   {nav.items.map((item) => (
@@ -114,7 +117,7 @@ export function SiteFooter() {
                         href={item.href}
                         className="cursor-pointer text-gray-400 hover:text-muted-foreground hover:opacity-90 duration-200"
                       >
-                        {item.name}
+                         {t(item.name)}
                       </Link>
                     </li>
                   ))}
@@ -144,7 +147,7 @@ export function SiteFooter() {
             <Link href="/" className="cursor-pointer">
               {siteConfig.name}
             </Link>
-            . All Rights Reserved.
+            {t("copyRight")}
           </span>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import SectionTitle from "@/components/Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import { Testimonial } from "@/types/testimonial";
+import { useTranslations } from "next-intl";
 
 const testimonialData: Testimonial[] = [
   {
@@ -35,12 +36,14 @@ const testimonialData: Testimonial[] = [
 ];
 
 const Testimonials = () => {
+  const t = useTranslations("Testimonials");
+  const sectionTitle = `${t("SectionTitlePart1")} <span class='text-primary'>${t("SectionTitlePart2")}</span> ${t("SectionTitlePart3")} <span class='text-primary'>${t("SectionTitlePart4")}</span> `
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle          
-          title="Admired by <span class='text-primary'>SaaS Founders, Makers,</span> and <span class='text-primary'>Developers</span>"
-          paragraph="Exceptional Features, Seamless Developer Experience, Tons of Integrations and Highly Optimized!"
+          title={sectionTitle}
+          paragraph={t("sectionPeragraph")}
           center
           width="665px"
         />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "./Common/SectionTitle";
+import { useTranslations } from "next-intl";
 
 
 const checkIcon = (
@@ -9,6 +10,8 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
+  const t = useTranslations("AboutSectionOne");
+  const sectionTitle = `${t("SectionTitlePart1")} <span class='text-primary'>${t("SectionTitlePart2")}</span> ${t("SectionTitlePart3")} `
   const List: React.FC<{ text: string }> = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -25,8 +28,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle              
-                title="Built with Modern <span class='text-primary'>Cutting-edge</span> Technologies "
-                paragraph="Incorporates cutting-edge technologies, ensuring your software service is built on the latest, most advanced frameworks and tools. This provides a robust, scalable foundation for your SaaS product, offering you a competitive edge in a fast-paced digital market."
+                title={sectionTitle}
+                paragraph={t("sectionPeragraph")}
                 mb="44px"
               />
 

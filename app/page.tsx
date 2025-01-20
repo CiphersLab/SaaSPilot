@@ -26,12 +26,12 @@ export default function Home() {
           </p>
         </div>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>
-        The <span className='text-blue-600'>Shortcut</span> to{' '}
+        {t("headingPart1")}<span className='text-blue-600'>{t("headingPart2")}</span> {t("headingPart3")}{' '}
           SaaS{' '}
-          <span className='text-blue-600'>Success</span>.
+          <span className='text-blue-600'>{t("headingPart4")}</span>.
         </h1>
         <p className='mt-5 max-w-prose text-zinc-700 dark:text-white sm:text-lg'>
-          SaaS Pilot gives you a head start with a complete, modern SaaS starter kit. Focus on innovation while we handle the heavy lifting, from authentication to payments and multi-language support.
+          {t("peragraph")}
         </p>
 
         <Link
@@ -41,7 +41,7 @@ export default function Home() {
           })}
           href='/dashboard'
           target='_blank'>
-          Get started{' '}
+          {t("getStarted")}{' '}
           <ArrowRight className='ml-2 h-5 w-5' />
         </Link>
       </MaxWidthWrapper>
@@ -97,10 +97,10 @@ export default function Home() {
         <div className='mb-12 px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 dark:text-white sm:text-5xl'>
-            Turn Ideas into Income in <span className='text-blue-600'>Days</span>
+            {t("feature.headingPart1")} <span className='text-blue-600'>{t("feature.headingPart2")}</span>
             </h2>
             <p className='mt-4 text-lg text-gray-600 dark:text-white'>
-              With SaaS Pilot, you&apos;re just a few steps away from launching your SaaS product. Packed with pre-built features like authentication, payments, and admin tools, it&apos;s everything you need to hit the ground running.
+              {t("feature.peragraph")}
             </p>
           </div>
         </div>
@@ -110,30 +110,30 @@ export default function Home() {
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 dark:border-primary-foreground  py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 1
+                {t("step1.step")}
               </span>
               <span className='text-xl font-semibold'>
-              Find Your SaaS Idea
+              {t("step1.heading")}
               </span>
               <span className='mt-2 text-zinc-700 dark:text-white'>
-                Identify a profitable niche or solution that resonates with your audience.
+              {t("step1.peragraph")}
               </span>
             </div>
           </li>
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 dark:border-primary-foreground py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 2
+              {t("step2.step")}
               </span>
               <span className='text-xl font-semibold'>
-                Build with SaaS Pilot
+              {t("step2.heading")}
               </span>
               <span className='mt-2 text-zinc-700 dark:text-white'>
-                Use SaaS Pilot to quickly create a feature-rich, scalable product. {' '}
+              {t("step2.peragraph")}{' '}
                 <Link
                   href='/pricing'
                   className='text-blue-700 underline underline-offset-2'>
-                  pro plan
+                  {t("step2.proPlan")}
                 </Link>
               </span>
             </div>
@@ -141,13 +141,13 @@ export default function Home() {
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 dark:border-primary-foreground py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 3
+              {t("step3.step")}
               </span>
               <span className='text-xl font-semibold'>
-                Launch and Earn
+              {t("step3.heading")}
               </span>
               <span className='mt-2 text-zinc-700 dark:text-white'>
-              Go live, attract customers, and start generating revenue fast.
+              {t("step3.peragraph")}
               </span>
             </div>
           </li>

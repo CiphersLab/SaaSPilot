@@ -1,6 +1,33 @@
 {
   "Home": {
-    "title": "SaaS Starter von Ciphers Lab ist jetzt öffentlich!"
+    "title": "Das SaaS-Starterkit von SaaS Pilot ist jetzt öffentlich verfügbar!",
+    "headingPart1": "Der",
+    "headingPart2": "Abkürzung",
+    "headingPart3": "zum",
+    "headingPart4": "Erfolg",
+    "peragraph": "SaaS Pilot gibt Ihnen einen Vorsprung mit einem vollständigen, modernen SaaS-Starterkit. Konzentrieren Sie sich auf Innovation, während wir die schwere Arbeit übernehmen, von der Authentifizierung bis zu Zahlungen und mehrsprachiger Unterstützung.",
+    "getStarted": "Loslegen",
+    "feature": {
+      "headingPart1": "Verwandeln Sie Ideen in Einkommen in",
+      "headingPart2": "Tagen",
+      "peragraph": "Mit SaaS Pilot sind Sie nur wenige Schritte davon entfernt, Ihr SaaS-Produkt zu starten. Mit vorgefertigten Funktionen wie Authentifizierung, Zahlungen und Admin-Tools ist alles dabei, was Sie brauchen, um sofort loszulegen."
+    },
+    "step1": {
+      "step": "Schritt 1",
+      "heading": "Finden Sie Ihre SaaS-Idee",
+      "peragraph": "Identifizieren Sie eine profitable Nische oder Lösung, die bei Ihrem Publikum Anklang findet."
+    },
+    "step2": {
+      "step": "Schritt 2",
+      "heading": "Erstellen Sie mit SaaS Pilot",
+      "peragraph": "Verwenden Sie SaaS Pilot, um schnell ein funktionsreiches und skalierbares Produkt zu erstellen.",
+      "proPlan": "Pro-Plan"
+    },
+    "step3": {
+      "step": "Schritt 3",
+      "heading": "Starten und Verdienen",
+      "peragraph": "Gehen Sie live, ziehen Sie Kunden an und beginnen Sie schnell, Einnahmen zu generieren."
+    }
   },
   "Languages": {
     "title": "Sprachen",
@@ -80,5 +107,48 @@
       "aboutUs": "About Us",
       "contactUs": "Contact Us"
     }
+  },
+  "SiteFooter": {
+    "itemPrice": "Preise",
+    "itemDocs": "Dokumentation",
+    "itemDiscord": "Discord",
+    "itemTwitter": "Twitter",
+    "itemEmail": "E-Mail",
+    "itemTerms": "AGB",
+    "itemPrivacy": "Datenschutz",
+    "itemLabel1": "Produkt",
+    "itemLabel2": "Entwickler",
+    "itemLabel3": "Gemeinschaft",
+    "itemLabel4": "Rechtliches",
+    "itemIconDiscord": "Discord",
+    "itemIconTwitter": "Twitter",
+    "itemIconLinkedIn": "LinkedIn",
+    "copyRight": "Alle Rechte vorbehalten.",
+    "siteDescription": "Warum Monate mit der Einrichtung verschwenden? SaaS Pilot bietet ein sofort einsatzbereites Next.js-Boilerplate."
+  },
+  "AboutSectionOne": {
+    "SectionTitlePart1": "Erstellt mit modernen",
+    "SectionTitlePart2": "fortschrittlichen",
+    "SectionTitlePart3": "Technologien",
+    "sectionPeragraph": "Integriert modernste Technologien, um sicherzustellen, dass Ihr Software-Service auf den neuesten und fortschrittlichsten Frameworks und Tools basiert. Dies bietet eine robuste, skalierbare Grundlage für Ihr SaaS-Produkt und verschafft Ihnen einen Wettbewerbsvorteil in einem schnelllebigen digitalen Markt."
+  },
+  "Testimonials": {
+    "SectionTitlePart1": "Bewundert von",
+    "SectionTitlePart2": "SaaS-Gründern, Entwicklern",
+    "SectionTitlePart3": "und",
+    "SectionTitlePart4": "Macherinnen",
+    "sectionPeragraph": "Herausragende Funktionen, nahtlose Entwicklererfahrung, zahlreiche Integrationen und hoch optimiert!"
+  },
+  "Technologies": {
+    "peragraph": "Dieses Projekt wurde mit den folgenden Technologien erstellt"
+  },
+  "FAQ": {
+    "sectionTitlePart1": "Häufig",
+    "sectionTitlePart2": "gestellte",
+    "sectionTitlePart3": "Fragen",
+    "question1": "Wie funktioniert es?",
+    "question2": "Was kostet es?",
+    "answer1": "Beschreibung der Dienstleistung",
+    "answer2": "Beschreibung der Preisgestaltung"
   }
 }

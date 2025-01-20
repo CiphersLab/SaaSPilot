@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl"
+
 type Tool = {
   name: string
   icon: React.ReactNode
@@ -73,12 +75,14 @@ const tools: Tool[] = [
 ]
 
 export const Technologies = () => {
+  const t = useTranslations("Technologies");
+
   return (
     <section className="container max-w-[1400px] py-16 md:py-20 lg:py-28 pb-12 md:pb-16 lg:pb-24 mx-auto">
       <div className="w-full flex flex-col items-center text-center gap-8">
         <div className="text-center">
           <p className="text-muted-foreground text-base sm:text-lg">
-            This project was built using the following technologies
+            {t("peragraph")}
           </p>
         </div>
 

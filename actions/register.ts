@@ -33,12 +33,16 @@ export const register = async (values: z.infer<typeof RegisterSchema>) => {
     return { error: "Email already in use!" };
   }
 
+  const adminEmails = process.env.ADMIN_EMAILS?.split(',') || [];
+  const isAdmin = adminEmails.includes(email);
+
   await db.user.create({
     data: {
       name,
       email,
       password: hashedPassword,
-      username
+      username,
+      role: isAdmin ? "ADMIN" : "USER"
     },
   });
 

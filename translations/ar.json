@@ -1,6 +1,33 @@
 {
   "Home": {
-    "title": "SaaS Starter بواسطة Ciphers Lab متاح الآن للجميع!"
+    "title": "مجموعة البداية SaaS من SaaS Pilot أصبحت متاحة الآن للجميع!",
+    "headingPart1": "الطريق",
+    "headingPart2": "السريع",
+    "headingPart3": "إلى",
+    "headingPart4": "النجاح",
+    "peragraph": "SaaS Pilot يمنحك انطلاقة قوية مع مجموعة بداية SaaS كاملة وحديثة. ركز على الابتكار بينما نتولى الأعمال الثقيلة، من المصادقة إلى الدفع ودعم اللغات المتعددة.",
+    "getStarted": "ابدأ الآن",
+    "feature": {
+      "headingPart1": "حوّل الأفكار إلى دخل في",
+      "headingPart2": "أيام",
+      "peragraph": "مع SaaS Pilot، أنت على بعد خطوات قليلة من إطلاق منتج SaaS الخاص بك. مليء بالميزات الجاهزة مثل المصادقة، والدفع، وأدوات الإدارة، كل ما تحتاجه لتبدأ بسرعة."
+    },
+    "step1": {
+      "step": "الخطوة 1",
+      "heading": "ابحث عن فكرة SaaS الخاصة بك",
+      "peragraph": "حدد مجالًا مربحًا أو حلاً يتماشى مع جمهورك."
+    },
+    "step2": {
+      "step": "الخطوة 2",
+      "heading": "قم بالبناء باستخدام SaaS Pilot",
+      "peragraph": "استخدم SaaS Pilot لإنشاء منتج غني بالميزات وقابل للتطوير بسرعة.",
+      "proPlan": "الخطة الاحترافية"
+    },
+    "step3": {
+      "step": "الخطوة 3",
+      "heading": "أطلق وابدأ الربح",
+      "peragraph": "أطلق منتجك، اجذب العملاء، وابدأ في تحقيق الإيرادات بسرعة."
+    }
   },
   "Languages": {
     "title": "اللغات",
@@ -80,5 +107,48 @@
       "aboutUs": "About Us",
       "contactUs": "Contact Us"
     }
+  },
+  "AboutSectionOne": {
+    "SectionTitlePart1": "تم بناؤه باستخدام",
+    "SectionTitlePart2": "التقنيات",
+    "SectionTitlePart3": "الحديثة",
+    "sectionPeragraph": "يحتوي على أحدث التقنيات لضمان أن تكون خدمتك البرمجية مبنية على أحدث الأطر والأدوات المتقدمة. يوفر هذا أساسًا قويًا وقابلًا للتطوير لمنتج SaaS الخاص بك، مما يمنحك ميزة تنافسية في سوق رقمي سريع التغير."
+  },
+  "Testimonials": {
+    "SectionTitlePart1": "معجب به من قبل",
+    "SectionTitlePart2": "مؤسسي SaaS،",
+    "SectionTitlePart3": "المطورين",
+    "SectionTitlePart4": "والمبدعين",
+    "sectionPeragraph": "ميزات استثنائية، تجربة مطور سلسة، العديد من التكاملات، وأداء عالي التحسين!"
+  },
+  "Technologies": {
+    "peragraph": "تم بناء هذا المشروع باستخدام التقنيات التالية"
+  },
+  "FAQ": {
+    "sectionTitlePart1": "الأسئلة",
+    "sectionTitlePart2": "الشائعة",
+    "sectionTitlePart3": "المتكررة",
+    "question1": "كيف يعمل؟",
+    "question2": "ما هي أسعاركم؟",
+    "answer1": "محتوى وصف الخدمة",
+    "answer2": "محتوى وصف الأسعار"
+  },
+  "SiteFooter": {
+    "itemPrice": "التسعير",
+    "itemDocs": "الوثائق",
+    "itemDiscord": "ديسكورد",
+    "itemTwitter": "تويتر",
+    "itemEmail": "البريد الإلكتروني",
+    "itemTerms": "الشروط",
+    "itemPrivacy": "الخصوصية",
+    "itemLabel1": "المنتج",
+    "itemLabel2": "المطورين",
+    "itemLabel3": "المجتمع",
+    "itemLabel4": "القانوني",
+    "itemIconDiscord": "ديسكورد",
+    "itemIconTwitter": "تويتر",
+    "itemIconLinkedIn": "لينكدإن",
+    "copyRight": "جميع الحقوق محفوظة.",
+    "siteDescription": "لماذا تضيع شهورًا في الإعداد؟ يقدم SaaS Pilot قالب جاهز للاستخدام مبني على Next.js."
   }
 }

@@ -2,16 +2,31 @@
 import React from 'react';
 import { useCredits } from '../(context)/CreditsContext';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BadgePlus } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { useSidebar } from './sidebar';
 
 
 const CreditsDisplay: React.FC = () => {
   const { credits } = useCredits();  // Get credits and totalUsage from the context
   const router = useRouter();
+  const { state } = useSidebar();
+  const isCollapsed = state === 'collapsed';
   const handleAddMore = async () => {    
     router.push("/dashboard/billing/add-credits");
   };
+  if (isCollapsed) {
+    return (
+      <div className='bg-background mb-3'>        
+        <div style={styles.balanceContainer} className='flex text-center'>
+          <p>🪙 {credits}</p>        
+        </div>
+        <div onClick={() => handleAddMore()} className=' mt-3'>           
+          <BadgePlus  className='h-5 w-5 ml-1.5'/>                 
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className='bg-background' style={styles.container}>
@@ -20,9 +35,9 @@ const CreditsDisplay: React.FC = () => {
         <p><strong>Current Balance:</strong> {credits} 🪙</p>        
       </div>
       <div>
-      <Button onClick={() => handleAddMore()} className='w-full mt-3'>
-        Add More Credits <ArrowRight className='h-5 w-5 ml-1.5' />
-      </Button>
+        <Button onClick={() => handleAddMore()} className='w-full mt-3'>
+          Add More Credits <ArrowRight className='h-5 w-5 ml-1.5' />
+        </Button>
       </div>
     </div>
   );

@@ -8,6 +8,10 @@ import {
 } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Button } from "./ui/button";
+import { useCredits } from "@/app/(protected)/dashboard/(context)/CreditsContext";
+
+
 
 interface PageProps {
   user: any;
@@ -16,12 +20,17 @@ interface PageProps {
 
 const Dashboard = ({ user }: PageProps) => {
   const [loading, setLoading] = useState(true);
+  const { spendCredits } = useCredits();
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
   }, []);
+
+  const subtractCredits = async () => {    
+    await spendCredits(user.id, 10); // Replace 'user-id' with actual ID
+  };
 
   return (
     <main className="max-w-7xl md:p-10">
@@ -43,14 +52,14 @@ const Dashboard = ({ user }: PageProps) => {
                 </>
               ) : (
                 <>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p>Start using our product feature here</p>
 
                   <p>
-                    Iste quidem dolorem labore placeat nam accusamus pariatur
-                    ducimus. Consequatur consequuntur dolorem blanditiis,
-                    incidunt ullam eius nihil rem! Suscipit illum consequuntur
-                    inventore.
+                  The button below, illustrate how credits are deducted from user profile. This will deducts 10 credits from user profile.
                   </p>
+                  <Button onClick={() => subtractCredits()} className='w-[250px] mt-3'>
+                    User Credits
+                  </Button>
                 </>
               )}
             </div>

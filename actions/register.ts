@@ -36,13 +36,20 @@ export const register = async (values: z.infer<typeof RegisterSchema>) => {
   const adminEmails = process.env.ADMIN_EMAILS?.split(',') || [];
   const isAdmin = adminEmails.includes(email);
 
-  await db.user.create({
+  let currentUser = await db.user.create({
     data: {
       name,
       email,
       password: hashedPassword,
       username,
       role: isAdmin ? "ADMIN" : "USER"
+    },
+  });
+
+  await db.credit.create({
+    data: {
+      userId: currentUser?.id,
+      balance: parseInt(process.env.INITIAL_CREDITS_FOR_NEW ?? '0'),
     },
   });
 

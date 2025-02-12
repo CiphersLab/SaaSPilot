@@ -259,7 +259,7 @@ export default function DashboardSidebar({
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem className={clsx({ "justify-end": isRTL })} onClick={onClick}>
-                      <LogOut className={clsx("mx-2", { "rotate-180" :isRTL})}/>
+                      <LogOut className={clsx({ "rotate-180" :isRTL})}/>
                       Log out
                     </DropdownMenuItem>
                   </DropdownMenuContent>

@@ -23,12 +23,14 @@ import { FormError } from "@/components/form-error";
 import { FormSucess } from "@/components/form-sucess";
 import { register } from "@/actions/register";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 const RegisterForm = () => {
   const t = useTranslations("RegisterPage");
   const [error, setError] = useState<string | undefined>("");
   const [sucess, setSucess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof RegisterSchema>>({
     resolver: zodResolver(RegisterSchema),
@@ -48,6 +50,9 @@ const RegisterForm = () => {
       register(values).then((data) => {
         setError(data.error);
         setSucess(data.sucess);
+        setTimeout(() => {
+          router.push("/auth/login");
+        }, 2000);
       });
     });
   };

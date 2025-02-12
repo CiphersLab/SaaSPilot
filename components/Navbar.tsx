@@ -6,6 +6,7 @@ import MobileNav from "./MobileNav";
 import LangSwitcher from "./LangSwitcher";
 import { getLocale, getTranslations } from "next-intl/server";
 import { ThemeToggle } from "./ThemeToggle";
+import Image from "next/image";
 
 let rtlDetector = require("rtl-detect");
 
@@ -18,8 +19,12 @@ const Navbar = async () => {
   return (
     <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
-        <div className="flex h-14 items-center justify-between">
-          <Link href="/" className="flex z-40 font-semibold">
+        <div className="flex h-14 items-center justify-between">          
+          <Link href="/" className="flex z-40 font-semibold items-center">
+          <div className="relative h-12 w-12 mx-4">
+            <Image fill alt="Logo" src="/logo.png" />
+          </div>
+
             <span>
               {t("title")}
             </span>
